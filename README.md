@@ -7,7 +7,8 @@ Sending text message using spring boot with twilio
   - https://youtu.be/lJxjTLU9pGs
 
 # How to run this project 
-  - Supply the appropriate values specified in application.properties file and everything should works fine
+  - First create a twilio refer to the provided linl how to create twilio account.
+  - Second supply the appropriate values specified in application.properties file and everything should works fine
   - And hit the this endpoint with request body of
   ```
     POST http://localhost:{postNumber}/twillio/sendSMS
