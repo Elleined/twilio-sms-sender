@@ -1,4 +1,4 @@
-# twilio-sms-sender
+# twilio-sms-sender-api
 Sending text message using spring boot with twilio
 
 # How to run this project 
