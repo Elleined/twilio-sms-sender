@@ -13,9 +13,9 @@ public class SMSService {
 
     private final PhoneNumber twilioNumber;
 
-    public SMSService(@Value("${twilio.account.sid}") String sid,
-                      @Value("${twilio.account.auth_token}") String authToken,
-                      @Value("${twilio.number}") String twilioNumber) {
+    public SMSService(@Value("${SID}") String sid,
+                      @Value("${AUTH_TOKEN}") String authToken,
+                      @Value("${NUMBER}") String twilioNumber) {
         this.twilioNumber = new PhoneNumber(twilioNumber);
 
         log.info("Account sid {}", sid);
