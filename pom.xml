@@ -8,11 +8,11 @@
         <version>3.1.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.elleined.sms-sender</groupId>
-    <artifactId>sms-sender-twilio</artifactId>
+    <groupId>com.elleined</groupId>
+    <artifactId>twilio-sms-sender</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>sms-sender-twilio</name>
-    <description>sms-sender-twilio</description>
+    <name>twilio-sms-sender</name>
+    <description>Send SMS using Twilio</description>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -30,7 +30,6 @@
             <version>1.18.28</version>
             <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

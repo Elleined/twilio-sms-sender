@@ -1,4 +1,4 @@
-package com.elleined.smssender.smssendertwilio;
+package com.elleined.twiliosmssender;
 
 import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Message;
@@ -25,7 +25,7 @@ public class SMSService {
         Twilio.init(sid, authToken);
     }
 
-    public String sendSMS(MessageDTO messageDTO) {
+    public String message(MessageDTO messageDTO) {
         PhoneNumber receiver = new PhoneNumber(messageDTO.receiverNumber());
         Message message = Message.creator(receiver, twilioNumber, messageDTO.body()).create();
         log.info("Message status {}", message.getStatus());

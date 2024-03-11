@@ -1,4 +1,4 @@
-package com.elleined.smssender.smssendertwilio;
+package com.elleined.twiliosmssender;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping
+@RequestMapping("/messaging")
 public class SMSController {
     private final SMSService smsService;
 
-    @PostMapping("/sendSMS")
-    public ResponseEntity<String> sendSMS(@RequestBody MessageDTO messageDTO) {
-        String responseMessage = smsService.sendSMS(messageDTO);
+    @PostMapping
+    public ResponseEntity<String> message(@RequestBody MessageDTO messageDTO) {
+        String responseMessage = smsService.message(messageDTO);
         return ResponseEntity.accepted().body(responseMessage);
     }
 }

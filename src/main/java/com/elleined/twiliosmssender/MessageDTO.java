@@ -1,3 +1,3 @@
-package com.elleined.smssender.smssendertwilio;
+package com.elleined.twiliosmssender;
 
 public record MessageDTO(String receiverNumber, String body) { }

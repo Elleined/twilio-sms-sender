@@ -1,4 +1,4 @@
-package com.elleined.smssender.smssendertwilio;
+package com.elleined.twiliosmssender;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
