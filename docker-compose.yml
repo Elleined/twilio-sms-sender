@@ -2,6 +2,7 @@ version: "3"
 services:
   twilio_sms_sender_api:
     build: .
+    image: elleined/tssa
     container_name: tssa_app
     restart: always
     ports:
