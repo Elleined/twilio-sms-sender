@@ -6,7 +6,7 @@ services:
     container_name: tssa_app
     restart: always
     ports:
-      - "8080:8080"
+      - "8070:8070"
     environment:
       - SID=to_be_supplied
       - AUTH_TOKEN=to_be_supplied

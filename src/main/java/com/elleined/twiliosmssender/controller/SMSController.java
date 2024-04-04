@@ -1,5 +1,8 @@
-package com.elleined.twiliosmssender;
+package com.elleined.twiliosmssender.controller;
 
+import com.elleined.twiliosmssender.dto.MessageDTO;
+import com.elleined.twiliosmssender.service.SMSService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,8 +17,7 @@ public class SMSController {
     private final SMSService smsService;
 
     @PostMapping
-    public ResponseEntity<String> message(@RequestBody MessageDTO messageDTO) {
-        String responseMessage = smsService.message(messageDTO);
-        return ResponseEntity.accepted().body(responseMessage);
+    public String message(@Valid @RequestBody MessageDTO messageDTO) {
+        return smsService.message(messageDTO);
     }
 }
