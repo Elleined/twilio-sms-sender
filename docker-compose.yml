@@ -11,6 +11,7 @@ services:
       - SID=to_be_supplied
       - AUTH_TOKEN=to_be_supplied
       - NUMBER=to_be_supplied
+      - PORT=8070
     networks:
       - tssa_network
 networks:
