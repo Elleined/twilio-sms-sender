@@ -5,6 +5,8 @@ services:
     container_name: twilio_sms_sender_api
     env_file:
       - .env
+    ports:
+      - "8070:8070"
     networks:
       - twilio_sms_sender_api_network
 networks:
